@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+  }
+  
+  body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  
+    background:url("depositphotos_307959448-stock-photo-crumpled-white-paper-background-close.jpg");
+  
+    padding:20px;
+  }
+  
+  .container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .card{
+    width:320px;
+    max-width:100%;
+  
+    background:white;
+    border:3px dashed #ff6b81;
+    border-radius:25px;
+  
+    padding:30px 20px;
+    text-align:center;
+  
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  
+    animation:float 3s ease-in-out infinite;
+  }
+  
+  .cat{
+    width:140px;
+    margin-bottom:15px;
+  }
+  
+  h1{
+    color:#6a1b9a;
+    margin-bottom:5px;
+  }
+  
+  span{
+    color:#ff4d6d;
+  }
+  
+  p{
+    color:#555;
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size:16px;
+  }
+  
+  .buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+  }
+  
+  button{
+    border:none;
+    padding:12px 22px;
+    border-radius:12px;
+    cursor:pointer;
+  
+    font-size:16px;
+    font-weight:bold;
+  
+    transition:0.3s;
+  }
+  
+  .yes{
+    background:#ff4d6d;
+    color:white;
+  }
+  
+  .yes:hover{
+    background:#ff2f55;
+    transform:scale(1.05);
+  }
+  
+  .no{
+    background:#ddd;
+    color:#333;
+  }
+  
+  .no:hover{
+    background:#bbb;
+  }
+  
+  @keyframes float{
+    0%{
+      transform:translateY(0px);
+    }
+    50%{
+      transform:translateY(-5px);
+    }
+    100%{
+      transform:translateY(0px);
+    }
+  }
